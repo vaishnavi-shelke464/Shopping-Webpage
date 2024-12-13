@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Store</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+    <div class="nav">
+        <div class="nav-items">
+            <aside class="dashboard">
+                <div class="dashboard-title" onclick="toggleDashboard()">
+                    <i class="fas fa-th-large"></i> 
+                </div>
+                <div class="dashboard-sections" id="dashboard-menu">
+                    <div class="dashboard-section" id="categories">
+                        <h2>Categories</h2>
+                        <ul>
+                            <li><a href="men's.html">Men's</a></li>
+                            <li><a href="women's.html">Women's</a></li>
+                            <li><a href="kids.html">Kids</a></li>
+                        </ul>
+                    </div>
+                    <div class="dashboard-section" id="products">
+                        <h2>Products</h2>
+                        <ul>
+                            <li><a href="tshirts.html">T-Shirts</a></li>
+                            <li><a href="jeans.html">Jeans</a></li>
+                            <li><a href="shoes.html">Shoes</a></li>
+                        </ul>
+                    </div>
+                    <div class="dashboard-section" id="brands">
+                        <h2>Brands</h2>
+                        <ul>
+                            <li><a href="#">Nike</a></li>
+                            <li><a href="#">Adidas</a></li>
+                            <li><a href="#">Puma</a></li>
+                            <li><a href="#">Levi's</a></li>
+                        </ul>
+                    </div>
+                    <div class="dashboard-section" id="cart">
+                        <h2>Cart</h2>
+                        <ul id="cart-list">
+                        </ul>
+                        <p id="total-price">$0.00</p>
+                        <button id="checkout">Checkout</button>
+                    </div>
+                    <div class="dashboard-section" id="profile">
+                        <h2>Profile</h2>
+                        <p><strong>Name:</strong> John Doe</p>
+                        <p><strong>Email:</strong> johndoe@example.com</p>
+                        <button onclick="logout()">Logout</button>
+                    </div>
+                </div>
+            </aside>
+        
+            <div class="search">
+                <input type="text" class="search-box" placeholder="Search brand, product">
+                <button class="search-btn">Search</button>
+            
+    </div>
+    <nav>
+        <ul class="category">
+            <li><a href="home.html" class="footer-link">Home</a></li>
+            <li><a href="tshirts.html" class="footer-link">T-Shirts</a></li>
+            <li><a href="sweatshirts.html" class="footer-link">Sweatshirts</a></li>
+            <li><a href="shirts.html" class="footer-link">Shirts</a></li>
+            <li><a href="jeans.html" class="footer-link">Jeans</a></li>
+            <li><a href="shoes.html" class="footer-link">Shoes</a></li>
+        </ul>
+        
+    </nav>
+</header>
+<main class="container">
+    
+
+        <section class="main-content">
+            <section class="hero">
+                <h1>Welcome to Our Online Shopping Store</h1>
+                <p>Explore our collection of men's, women's, and kids' Shoes, Shirts, Jeans, Sweatshirts, T-shirts</p>
+                <div class="featured-products">
+                    <h2>Best Sellers</h2>
+                    <div class="products-list">
+                        <div class="product-item" onclick="addToCart('T-Shirt', 25.00)">
+                            <img src="tshirt1.jpg" alt="T-Shirt">
+                            <p>T-Shirt - $5.00</p>
+                        </div>
+                        <div class="product-item" onclick="addToCart('Shoes', 45.00)">
+                            <img src="shoes2.jpg" alt="Shoes">
+                            <p>Shoes - $90.00</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="sweatshirt2.jpg" alt="Sweatshirt">
+                                <p>Sweatshirt - $20.00</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="shirt3.jpg" alt="Shirt">
+                                <p>Shirts - $8.00</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="jeans2.jpg" alt="Jeans">
+                                <p>Jeans - $15.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="window.location.href='#product-section'">Shop Now</button>
+                <div class="trust-signals">
+                    <i class="fas fa-shield-alt"></i> Secure Payments
+                    <i class="fas fa-shipping-fast"></i> Free Shipping on Orders Over $50
+                    <i class="fas fa-star"></i> 4.5/5 Average Customer Rating
+                </div>
+                <div class="promo-banner">
+                    <h2>Flash Sale! Up to 50% Off on Selected Items</h2>
+                </div>
+                <div class="countdown-timer">
+                    <p>Flash Sale Ends In:</p>
+                    <span id="timer">03:15:30</span> 
+                </div>
+            </section>
+            
+        </section>
+        
+    </main>
+    <script src="index.js"></script>
+    <footer>
+        <p>&copy; 2024 Online Shopping Store</p>
+    </footer>
+</body>
+</html>

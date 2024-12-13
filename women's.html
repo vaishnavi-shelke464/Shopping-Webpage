@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Store</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav-items">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="Search brand, product">
+                    <button class="search-btn">Search</button>
+                
+        </div>
+        <nav>
+            <ul class="category">
+                <li><a href="home.html" class="footer-link">Home</a></li>
+                <li><a href="tshirts.html" class="footer-link">T-Shirts</a></li>
+                <li><a href="sweatshirts.html" class="footer-link">Sweatshirts</a></li>
+                <li><a href="shirts.html" class="footer-link">Shirts</a></li>
+                <li><a href="jeans.html" class="footer-link">Jeans</a></li>
+                <li><a href="shoes.html" class="footer-link">Shoes</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+    <section class="product-section">
+        <h2>Shoes</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="women-shoe1.jpg" alt="Shoe 1">
+                <h3>Nike Air Max</h3>
+                <p>$120.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="women-shoe2.jpg" alt="Shoe 2">
+                <h3>Adidas Superstar</h3>
+                <p>$90.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="women-shoe3.jpg" alt="Shoe 3">
+                <h3>Puma</h3>
+                <p>$70.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+        <!-- Add more shoes here -->
+</section>
+<section class="product-section">
+        
+    <h2>Sweatshirt</h2>
+    <div class="product-container">
+        <div class="product">
+            <img src="womensweatshirt1.jpg" alt="Sweatshirt 1">
+            <p>Sweatshirt 1</p>
+            <p>$25.00</p>
+            <button onclick="addToCart('Sweatshirt 1', 25.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="womensweatshirt2.jpg" alt="Sweatshirt 2">
+            <p>Sweatshirt 2</p>
+            <p>$30.00</p>
+            <button onclick="addToCart('Sweatshirt 2', 30.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="womensweatshirt3.jpg" alt="Sweatshirt 3">
+            <p>Sweatshirt 3</p>
+            <p>$50.00</p>
+            <button onclick="addToCart('Sweatshirt 3', 50.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="womensweatshirt4.jpg" alt="Sweatshirt 4">
+            <p>Sweatshirt 4</p>
+            <p>$60.00</p>
+            <button onclick="addToCart('Sweatshirt 4', 60.00)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+<section class="product-section">
+    <h2>T-Shirts</h2>
+    <div class="product-container">
+        <div class="product">
+            <img src="wtshirt1.jpg" alt="T-Shirt 1">
+            <p>T-Shirt 1</p>
+            <p>$25.00</p>
+            <button onclick="addToCart('T-Shirt 1', 25.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="wtshirt2.jpg" alt="T-Shirt 2">
+            <p>T-Shirt 2</p>
+            <p>$30.00</p>
+            <button onclick="addToCart('T-Shirt 2', 30.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="wtshirt3.jpg" alt="T-Shirt 3">
+            <p>T-Shirt 3</p>
+            <p>$50.00</p>
+            <button onclick="addToCart('T-Shirt 3', 50.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="wtshirt4.jpg" alt="T-Shirt 4">
+            <p>T-Shirt 4</p>
+            <p>$60.00</p>
+            <button onclick="addToCart('T-Shirt 4', 60.00)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+<section class="product-section"></section>
+    <h2>Jeans</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="womenjeans1.jpg" alt="Jeans 1">
+                <p>Jeans 1</p>
+                <p>$25.00</p>
+                <button onclick="addToCart('Jeans 1', 25.00)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="womenjeans2.jpg" alt="Jeans 2">
+                <p>Jeans 2</p>
+                <p>$30.00</p>
+                <button onclick="addToCart('Jeans 2', 30.00)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="womenjeans3.jpg" alt="Jeans 3">
+                <p>Jeans 3</p>
+                <p>$50.00</p>
+                <button onclick="addToCart('Jeans 3', 50.00)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="womenjeans4.jpg" alt="Jeans 4">
+                <p>Jeans 4</p>
+                <p>$60.00</p>
+                <button onclick="addToCart('Jeans 4', 60.00)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section class="product-section">
+        <h2>Shirts</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="womenshirt1.jpg" alt="Shirt 1">
+                    <p>Shirt 1</p>
+                    <p>$25.00</p>
+                    <button onclick="addToCart('Shirt 1', 25.00)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="womenshirt2.jpg" alt="Shirt 2">
+                    <p>Shirt 2</p>
+                    <p>$30.00</p>
+                    <button onclick="addToCart('Shirt 2', 30.00)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="womenshirt3.jpeg" alt="Shirt 3">
+                    <p>Shirt 3</p>
+                    <p>$50.00</p>
+                    <button onclick="addToCart('Shirt 3', 50.00)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="womenshirt4.jpg" alt="Shirt 4">
+                    <p>Shirt 4</p>
+                    <p>$60.00</p>
+                    <button onclick="addToCart('Shirt 4', 60.00)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+	<footer>
+		<p>&copy; 2024 Online Shopping  Store</p>
+	</footer>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Checkout</h2>
+            <ul id="checkout-items">
+                <!-- Items added to cart will be listed here -->
+            </ul>
+            <p id="checkout-total">Total: $0.00</p>
+            <button onclick="alert('Order Placed!')">Place Order</button>
+        </div>
+    </div>
+
+	<script src="index.js"></script>
+</body>
+</html>
